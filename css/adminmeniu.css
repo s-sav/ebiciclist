@@ -1,0 +1,407 @@
+@import url("componente.css");
+
+.dashboard .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2.1rem;
+  align-items: flex-start;
+}
+
+.dashboard .box-container .box {
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.8rem;
+}
+
+.dashboard .box-container .box h3 {
+  font-size: 2rem;
+  color: rgb(97, 97, 97);
+}
+
+.box h2{
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 1px rgb(194, 194, 194);
+  background-color: rgb(179, 179, 179);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: var(--border);
+  
+
+}
+
+.dashboard .box-container .box p {
+  font-size: 2rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: var(--border);
+  border-radius: 0.5rem;
+  color: var(--black);
+}
+/* ---------------------adaugare produse---------*/
+.add-products form {
+  max-width: 70rem;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 1px 1px 7px 3px rgb(206, 206, 206);
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.6rem;
+}
+
+.add-products form .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.add-products form .flex .inputBox {
+  width: 49%;
+}
+
+.add-products form .box {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background-color: rgb(190, 190, 190);
+}
+
+.show-products {
+  padding-top: 0;
+}
+
+.show-products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+  align-items: stretch; 
+}
+
+.show-products .box-container .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px ridge black;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+
+.show-products .box-container .box img {
+  margin: auto; 
+  height: 210px; 
+  width: 210px; 
+}
+
+
+.show-products .box-container .box .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: rgb(73, 72, 72);
+  border-radius: 0.5rem;
+  padding: 5px;
+  display: inline-block; 
+  margin-bottom: 1rem; 
+}
+
+
+.show-products .box-container .box .name,
+.show-products .box-container .box .cat {
+  font-size: 2rem; 
+  color: rgb(66, 68, 66);
+  margin: 0.5rem 0; 
+}
+
+.show-products .box-container .box .details {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0.5rem 0; 
+}
+
+.show-products .box-container .flex-btn {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  padding-top: 1rem;
+}
+
+.show-products .box-container .flex-btn .option-btn {
+  background-color: #ebebeb;
+  color: rgb(33, 33, 33);
+  padding: 10px 15px;
+  border-radius: 2rem;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+
+
+/*----------update produse----------*/
+
+.update-product form {
+  max-width: 45rem;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 1px 1px 7px 3px rgb(80, 81, 80);
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+
+.update-product form img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.update-product form .box {
+  width: 100%;
+  border: var(--border);
+  border-radius: 0.5rem;
+  background-color: rgb(180, 180, 180);
+  padding: 1.2rem 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0.5rem 0;
+}
+/*------------------plasare comanda-----------------*/
+
+.placed-orders .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem;
+  align-items: stretch; 
+  justify-content: center;
+}
+
+.placed-orders .box-container .box {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  width: 300px; 
+  min-height: 400px; 
+  border-radius: 1rem;
+  background-color: white;
+  padding: 20px;
+  border-style: outset;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+}
+
+.placed-orders .box-container .box p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.placed-orders .box-container .box p span {
+  color: rgb(62, 63, 62);
+  font-weight: 500;
+}
+
+.placed-orders .box-container .box .drop-down {
+  width: 100%;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.6rem;
+  color: black;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem; 
+}
+
+/*--------------------------
+------------------------------------cont utilizator-----------------*/
+
+.user-accounts .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.user-accounts .box-container .box {
+  border: 1px solid;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  width: 280px;
+}
+
+.user-accounts .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid;
+}
+
+.user-accounts .box-container .box p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.user-accounts .box-container .box p span {
+  color:rgb(71, 72, 71);
+  font-weight: 500;
+  margin: 2px;
+  
+}
+/*-------------------------------------------
+------------------------------------mesaje--------------------*/
+
+.messages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+
+.messages .box-container .box {
+  box-shadow: 1px 1px 3px 1px rgb(82, 82, 82);
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-style: outset; 
+}
+
+.messages .box-container .box p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color:black;
+  font-weight: 500;
+}
+
+.messages .box-container .box p span {
+  color: rgb(73, 74, 73);
+  font-weight: 500;
+}
+
+
+/* review-uri */
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.review .box-container .box {
+  flex: 1;
+  box-shadow: 1px 1px 3px 1px rgb(82, 82, 82);
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-style: outset; 
+}
+
+.review .box-container .box p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+}
+
+.review .box-container .box p span {
+  color: rgb(73, 74, 73);
+  font-weight: 500;
+}
+
+/* Graph Styles */
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0.8rem; /* Rounded corners for graphs */
+  box-shadow: var(--box-shadow); /* Add shadow for depth */
+}
+
+
+/* Raport */
+
+.report-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.report-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.report-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .add-products form .flex .inputBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .show-products .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .update-product form img {
+    height: auto;
+    width: 100%;
+  }
+
+  .placed-orders .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .user-accounts .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .messages .box-container {
+    grid-template-columns: 1fr;
+  }
+}
